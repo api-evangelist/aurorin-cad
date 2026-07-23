@@ -1,0 +1,39 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of https://www.aurorincad.com/.well-known/*
+host: https://www.aurorincad.com
+result: none-found
+notes: >-
+  No /.well-known/ discovery documents are published. Every RFC-defined path probed returned 404
+  from the Vercel-hosted marketing site. Recorded so re-runs do not re-probe blindly; absence is a
+  valid, expected result for a company with no public API surface. No WellKnown or SecurityTxt
+  pointer is wired in apis.yml because nothing was found.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+other_paths:
+- path: /robots.txt
+  status: 200
+- path: /sitemap.xml
+  status: 200
+- path: /llms.txt
+  status: 404
+subdomains_probed:
+- host: docs.aurorincad.com
+  status: unresolved
+- host: api.aurorincad.com
+  status: unresolved
+- host: status.aurorincad.com
+  status: unresolved
+- host: trust.aurorincad.com
+  status: unresolved
+- host: security.aurorincad.com
+  status: unresolved

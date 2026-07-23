@@ -1,20 +1,78 @@
 aid: aurorin-cad
-name: Aurorin Cad
-description: Aurorin Cad is a company surfaced as a portfolio company of y-combinator and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: Aurorin CAD
+description: Aurorin CAD is a San Francisco company building a modern mechanical CAD application
+  for engineers and hardware teams, founded in 2026 by Michael Baron and backed by Y Combinator
+  (Winter 2026 batch). Rather than layering on top of the geometry kernels that underpin
+  incumbent tools such as SolidWorks, NX, Creo, CATIA, Fusion 360 and Onshape, Aurorin has written
+  its own parametric, B-Rep driven CAD kernel designed to exploit modern multi-core CPUs and GPUs
+  and to be AI-native from the foundation rather than as a bolted-on assistant. The product ships
+  as a native desktop application for macOS and Windows, pairing conventional direct and parametric
+  editing with an integrated AI agent driven through a chat interface, with the stated goal of
+  collapsing modeling work that traditionally takes twenty minutes into seconds and avoiding the
+  slow rebuilds and cascading feature breakage common to older parametric systems. As of this
+  enrichment pass the company publishes no public API, developer portal, SDK or API documentation;
+  its public surface is a marketing site, a blog, an about/contact page, and careers listings.
 url: https://raw.githubusercontent.com/api-evangelist/aurorin-cad/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.aurorincad.com/opengraph-image-pwu6ef?5583581ef949662c
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - y-combinator
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- CAD
+- Mechanical Engineering
+- Product Design
+- Artificial Intelligence
+- Hardware
+- Manufacturing
+- Desktop Software
+- Y Combinator
 apis: []
+common:
+- type: Website
+  url: https://www.aurorincad.com/
+- type: Blog
+  url: https://www.aurorincad.com/blog
+- type: Support
+  url: https://www.aurorincad.com/contact
+- type: About
+  url: https://www.aurorincad.com/about
+- type: Careers
+  url: https://www.aurorincad.com/careers
+- type: GitHubOrganization
+  url: https://github.com/Aurorin-CAD
+- type: Download
+  url: https://www.aurorincad.com/download
+- type: CrunchBase
+  url: https://www.crunchbase.com/organization/aurorin
+- type: LinkedIn
+  url: https://www.linkedin.com/company/aurorin-cad
+- type: DomainSecurity
+  url: security/aurorin-cad-domain-security.yml
+- type: LLMsTxt
+  url: llms/aurorin-cad-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
